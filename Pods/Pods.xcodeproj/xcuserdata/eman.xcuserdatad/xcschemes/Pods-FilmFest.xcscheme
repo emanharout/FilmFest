@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0820"
+   LastUpgradeVersion = "0700"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "66C4C65B6884681D10B10DD8D2FC9E04"
+               BlueprintIdentifier = "F66C844EA2B799FA759F597643810920"
                BuildableName = "Pods_FilmFest.framework"
                BlueprintName = "Pods-FilmFest"
                ReferencedContainer = "container:Pods.xcodeproj">
@@ -45,7 +45,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66C4C65B6884681D10B10DD8D2FC9E04"
+            BlueprintIdentifier = "F66C844EA2B799FA759F597643810920"
             BuildableName = "Pods_FilmFest.framework"
             BlueprintName = "Pods-FilmFest"
             ReferencedContainer = "container:Pods.xcodeproj">
@@ -60,15 +60,6 @@
       savedToolIdentifier = ""
       useCustomWorkingDirectory = "NO"
       debugDocumentVersioning = "YES">
-      <MacroExpansion>
-         <BuildableReference
-            BuildableIdentifier = "primary"
-            BlueprintIdentifier = "66C4C65B6884681D10B10DD8D2FC9E04"
-            BuildableName = "Pods_FilmFest.framework"
-            BlueprintName = "Pods-FilmFest"
-            ReferencedContainer = "container:Pods.xcodeproj">
-         </BuildableReference>
-      </MacroExpansion>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
