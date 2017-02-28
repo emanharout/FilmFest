@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		0322DDFE1E6541BC00C335F3 /* DropShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DDFD1E6541BC00C335F3 /* DropShadowView.swift */; };
 		0322DE001E6547A000C335F3 /* MovieStructTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DDFF1E6547A000C335F3 /* MovieStructTests.swift */; };
+		0322DE021E654ADB00C335F3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DE011E654ADB00C335F3 /* Movie.swift */; };
 		2E95D7A35A50B5A140C4D20E /* Pods_FilmFestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B9CBAD60B36CA80B260A5E /* Pods_FilmFestTests.framework */; };
 		36575DD01DB56FB50023D5CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36575DCF1DB56FB50023D5CB /* AppDelegate.swift */; };
 		36575DD21DB56FB50023D5CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36575DD11DB56FB50023D5CB /* MainViewController.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		0322DDFD1E6541BC00C335F3 /* DropShadowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DropShadowView.swift; sourceTree = "<group>"; };
 		0322DDFF1E6547A000C335F3 /* MovieStructTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieStructTests.swift; sourceTree = "<group>"; };
+		0322DE011E654ADB00C335F3 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		03C0E3E91E36EAC01A784919 /* Pods-FilmFestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmFestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmFestTests/Pods-FilmFestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		281F261CC0B484D274D26F4B /* Pods-FilmFestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmFestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmFestTests/Pods-FilmFestTests.release.xcconfig"; sourceTree = "<group>"; };
 		36575DCC1DB56FB50023D5CB /* FilmFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +95,7 @@
 			children = (
 				36575DCF1DB56FB50023D5CB /* AppDelegate.swift */,
 				36575DD11DB56FB50023D5CB /* MainViewController.swift */,
+				0322DE011E654ADB00C335F3 /* Movie.swift */,
 				0322DDFD1E6541BC00C335F3 /* DropShadowView.swift */,
 				36575DD31DB56FB50023D5CB /* Main.storyboard */,
 				36575DD61DB56FB50023D5CB /* Assets.xcassets */,
@@ -337,6 +340,7 @@
 			files = (
 				0322DDFE1E6541BC00C335F3 /* DropShadowView.swift in Sources */,
 				36575DD21DB56FB50023D5CB /* MainViewController.swift in Sources */,
+				0322DE021E654ADB00C335F3 /* Movie.swift in Sources */,
 				36575DD01DB56FB50023D5CB /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
