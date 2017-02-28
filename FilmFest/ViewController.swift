@@ -14,7 +14,7 @@ class MainViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
       
-      
+      view.backgroundColor = GradientColor(.radial, frame: view.frame, colors: [UIColor.flatSkyBlue(), UIColor.flatNavyBlue()])
     }
 
 
