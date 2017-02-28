@@ -23,7 +23,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbv-Sg-oE9" customClass="DropShadowView" customModule="FilmFest" customModuleProvider="target">
-                                <rect key="frame" x="30" y="60" width="315" height="567"/>
+                                <rect key="frame" x="30" y="100" width="315" height="527"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
@@ -34,19 +34,29 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Film Fest" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UhI-80-zgd">
+                                <rect key="frame" x="115" y="28" width="145" height="43"/>
+                                <fontDescription key="fontDescription" name="Cochin-BoldItalic" family="Cochin" pointSize="37"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="mbv-Sg-oE9" secondAttribute="trailing" constant="14" id="61V-TY-Fsm"/>
                             <constraint firstItem="mbv-Sg-oE9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="14" id="APZ-YT-QHF"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="mbv-Sg-oE9" secondAttribute="bottom" constant="40" id="D7p-dS-Xo3"/>
-                            <constraint firstItem="mbv-Sg-oE9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="40" id="pP1-Bo-az7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="UhI-80-zgd" secondAttribute="trailing" constant="99" id="OW4-NJ-I55"/>
+                            <constraint firstItem="mbv-Sg-oE9" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="pP1-Bo-az7"/>
+                            <constraint firstItem="UhI-80-zgd" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="99" id="rD2-en-se7"/>
+                            <constraint firstItem="UhI-80-zgd" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="u5k-R6-SGf"/>
+                            <constraint firstItem="mbv-Sg-oE9" firstAttribute="top" secondItem="UhI-80-zgd" secondAttribute="bottom" constant="29" id="vIP-rz-CgC"/>
                         </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="18" y="43"/>
+            <point key="canvasLocation" x="16.800000000000001" y="42.728635682158924"/>
         </scene>
     </scenes>
 </document>
