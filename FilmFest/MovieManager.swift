@@ -9,6 +9,16 @@
 import Foundation
 
 class MovieManager {
-  let moviesToSeeCount = 0
+  var moviesToSeeCount = 0
   let moviesSeenCount = 0
+  private var moviesToSee = [Movie]()
+  
+  func addMovieToLibrary(movie: Movie) {
+    moviesToSeeCount += 1
+    moviesToSee.append(movie)
+  }
+  
+  func movieAtIndex(index: Int) -> Movie {
+    return moviesToSee[index]
+  }
 }

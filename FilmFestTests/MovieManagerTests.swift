@@ -11,9 +11,12 @@ import XCTest
 @testable import FilmFest
 class MovieManagerTests: XCTestCase {
   
+  var sut: MovieManager!
+  
   override func setUp() {
     super.setUp()
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    sut = MovieManager()
   }
   
   override func tearDown() {
@@ -23,13 +26,24 @@ class MovieManagerTests: XCTestCase {
   
   func testMoviesToSeeCount_ReturnsZero() {
     // sut is system under test, convention
-    let sut = MovieManager()
     XCTAssertEqual(sut.moviesToSeeCount, 0)
   }
   
   func testMoviesSeen_ReturnsZero() {
-    let sut = MovieManager()
     XCTAssertEqual(sut.moviesSeenCount, 0)
+  }
+  
+  func testMoviesToSeeCount_ReturnsOneAfterMovieAdded(){
+    sut.addMovieToLibrary(movie: Movie(title: "This is Sparta"))
+    XCTAssertEqual(sut.moviesToSeeCount, 1)
+  }
+  
+  func testMovieAtIndex_ReturnsLastAddedMovie() {
+    let movie = Movie(title: "Jungle 2 Jungle")
+    sut.addMovieToLibrary(movie: movie)
+    
+    let returnedMovieAtIndex = sut.movieAtIndex(index: 0)
+    XCTAssertEqual(movie.title, returnedMovieAtIndex.title)
   }
   
   
