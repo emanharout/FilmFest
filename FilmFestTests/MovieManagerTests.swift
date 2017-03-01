@@ -46,5 +46,12 @@ class MovieManagerTests: XCTestCase {
     XCTAssertEqual(movie.title, returnedMovieAtIndex.title)
   }
   
+  func testFavoriteMovie_UpdatesMoviesSeenAndMoviesTooSeeCounts() {
+    sut.addMovieToLibrary(movie: Movie(title: "Action Adventure"))
+    sut.favoriteMovieAtIndex(index: 0)
+    
+    XCTAssertEqual(sut.moviesToSeeCount, 0)
+    XCTAssertEqual(sut.moviesSeenCount, 1)
+  }
   
 }

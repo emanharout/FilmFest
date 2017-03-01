@@ -10,7 +10,7 @@ import Foundation
 
 class MovieManager {
   var moviesToSeeCount = 0
-  let moviesSeenCount = 0
+  var moviesSeenCount = 0
   private var moviesToSee = [Movie]()
   
   func addMovieToLibrary(movie: Movie) {
@@ -20,5 +20,11 @@ class MovieManager {
   
   func movieAtIndex(index: Int) -> Movie {
     return moviesToSee[index]
+  }
+  
+  func favoriteMovieAtIndex(index: Int) {
+    guard index < moviesToSeeCount else { return }
+    moviesToSeeCount -= 1
+    moviesSeenCount += 1
   }
 }
