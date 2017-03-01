@@ -10,4 +10,10 @@ import Foundation
 
 struct Movie {
   let title: String
+  var releaseDate: String?
+  
+  init(title: String, releaseDate: String? = nil) {
+    self.title = title
+    self.releaseDate = releaseDate
+  }
 }

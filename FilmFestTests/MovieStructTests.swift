@@ -23,8 +23,13 @@ class MovieStructTests: XCTestCase {
   
   // All test functions start with word test, followed by what you are testing (movie struct initializer)
   // and what you expect the result to be (movie title will be set)
-  func initTest_SetMovieTitle() {
+  func testInit_SetMovieTitle() {
     let movie = Movie(title: "Summer Blockbuster")
     XCTAssertEqual(movie.title, "Summer Blockbuster")
+  }
+  
+  func testInit_SetMovieTitleAndReleaseDate() {
+    let movie = Movie(title: "Romantic Comedy", releaseDate: "2/10/87")
+    XCTAssertEqual(movie.releaseDate, "2/10/87")
   }
 }
