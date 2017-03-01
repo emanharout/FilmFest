@@ -70,6 +70,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0322DE031E664BC500C335F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0322DE011E654ADB00C335F3 /* Movie.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		0322DE041E664BCB00C335F3 /* TestModel */ = {
+			isa = PBXGroup;
+			children = (
+				0322DDFF1E6547A000C335F3 /* MovieStructTests.swift */,
+			);
+			name = TestModel;
+			sourceTree = "<group>";
+		};
 		36575DC31DB56FB50023D5CB = {
 			isa = PBXGroup;
 			children = (
@@ -95,7 +111,7 @@
 			children = (
 				36575DCF1DB56FB50023D5CB /* AppDelegate.swift */,
 				36575DD11DB56FB50023D5CB /* MainViewController.swift */,
-				0322DE011E654ADB00C335F3 /* Movie.swift */,
+				0322DE031E664BC500C335F3 /* Model */,
 				0322DDFD1E6541BC00C335F3 /* DropShadowView.swift */,
 				36575DD31DB56FB50023D5CB /* Main.storyboard */,
 				36575DD61DB56FB50023D5CB /* Assets.xcassets */,
@@ -108,7 +124,7 @@
 		36575DE31DB56FB50023D5CB /* FilmFestTests */ = {
 			isa = PBXGroup;
 			children = (
-				0322DDFF1E6547A000C335F3 /* MovieStructTests.swift */,
+				0322DE041E664BCB00C335F3 /* TestModel */,
 				36575DE61DB56FB50023D5CB /* Info.plist */,
 			);
 			path = FilmFestTests;
