@@ -10,8 +10,17 @@ import UIKit
 
 class MovieLibraryDataService: NSObject, UITableViewDelegate, UITableViewDataSource {
   
+  var movieManager: MovieManager!
+  
   func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-    return 0
+    guard let movieManager = movieManager else { return 0 }
+    
+    return movieManager.moviesToSeeCount
+    
+  }
+  
+  func numberOfSections(in tableView: UITableView) -> Int {
+    return 2
   }
   
   func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
