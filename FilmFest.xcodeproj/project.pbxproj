@@ -12,6 +12,7 @@
 		0322DE021E654ADB00C335F3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DE011E654ADB00C335F3 /* Movie.swift */; };
 		0322DE081E66AA2000C335F3 /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DE071E66AA2000C335F3 /* MovieManagerTests.swift */; };
 		0322DE0A1E66ADE100C335F3 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DE091E66ADE100C335F3 /* MovieManager.swift */; };
+		03D654001E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D653FF1E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift */; };
 		2E95D7A35A50B5A140C4D20E /* Pods_FilmFestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6B9CBAD60B36CA80B260A5E /* Pods_FilmFestTests.framework */; };
 		36575DD01DB56FB50023D5CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36575DCF1DB56FB50023D5CB /* AppDelegate.swift */; };
 		36575DD21DB56FB50023D5CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 36575DD11DB56FB50023D5CB /* MainViewController.swift */; };
@@ -38,6 +39,7 @@
 		0322DE071E66AA2000C335F3 /* MovieManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
 		0322DE091E66ADE100C335F3 /* MovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
 		03C0E3E91E36EAC01A784919 /* Pods-FilmFestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmFestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmFestTests/Pods-FilmFestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		03D653FF1E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieLibraryViewControllerTests.swift; sourceTree = "<group>"; };
 		281F261CC0B484D274D26F4B /* Pods-FilmFestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmFestTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FilmFestTests/Pods-FilmFestTests.release.xcconfig"; sourceTree = "<group>"; };
 		36575DCC1DB56FB50023D5CB /* FilmFest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FilmFest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		36575DCF1DB56FB50023D5CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -103,6 +105,7 @@
 		0322DE061E664C5900C335F3 /* TestControllers */ = {
 			isa = PBXGroup;
 			children = (
+				03D653FF1E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift */,
 			);
 			name = TestControllers;
 			sourceTree = "<group>";
@@ -390,6 +393,7 @@
 			files = (
 				0322DE081E66AA2000C335F3 /* MovieManagerTests.swift in Sources */,
 				0322DE001E6547A000C335F3 /* MovieStructTests.swift in Sources */,
+				03D654001E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
