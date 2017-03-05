@@ -9,8 +9,9 @@
 import UIKit
 import ChameleonFramework
 
-class MainViewController: UIViewController {
+class MovieLibraryViewController: UIViewController {
   
+    @IBOutlet weak var movieTableView: UITableView!
   override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
   }

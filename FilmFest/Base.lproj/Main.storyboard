@@ -10,10 +10,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Main View Controller-->
+        <!--Movie Library View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="FilmFest" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="MovieLibraryVC" id="BYZ-38-t0r" customClass="MovieLibraryViewController" customModule="FilmFest" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -24,7 +24,29 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbv-Sg-oE9" customClass="DropShadowView" customModule="FilmFest" customModuleProvider="target">
                                 <rect key="frame" x="30" y="100" width="315" height="527"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="MRw-Xr-FaI">
+                                        <rect key="frame" x="0.0" y="0.0" width="315" height="527"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCellID" id="cnv-BZ-EbP">
+                                                <rect key="frame" x="0.0" y="28" width="315" height="44"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cnv-BZ-EbP" id="ffm-0j-5Tk">
+                                                    <rect key="frame" x="0.0" y="0.0" width="315" height="43"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                </tableViewCellContentView>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="MRw-Xr-FaI" firstAttribute="top" secondItem="mbv-Sg-oE9" secondAttribute="top" id="EkF-w3-MDK"/>
+                                    <constraint firstAttribute="trailing" secondItem="MRw-Xr-FaI" secondAttribute="trailing" id="mjz-kc-epS"/>
+                                    <constraint firstAttribute="bottom" secondItem="MRw-Xr-FaI" secondAttribute="bottom" id="qDj-PL-ET8"/>
+                                    <constraint firstItem="MRw-Xr-FaI" firstAttribute="leading" secondItem="mbv-Sg-oE9" secondAttribute="leading" id="xKl-tV-4yv"/>
+                                </constraints>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
                                         <size key="value" width="7" height="7"/>
@@ -53,6 +75,9 @@
                             <constraint firstItem="mbv-Sg-oE9" firstAttribute="top" secondItem="UhI-80-zgd" secondAttribute="bottom" constant="29" id="vIP-rz-CgC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="movieTableView" destination="MRw-Xr-FaI" id="xp4-Kf-0Nc"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
