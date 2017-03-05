@@ -32,4 +32,19 @@ class MovieLibraryViewControllerTests: XCTestCase {
     XCTAssertNotNil(sut.movieTableView)
   }
   
+  func testViewDidLoad_SetsTableViewDataSource() {
+    XCTAssertNotNil(sut.movieTableView.dataSource)
+    XCTAssertTrue(sut.movieTableView.dataSource is MovieLibraryDataService)
+  }
+  
+  func testViewDidLoad_SetsTableViewDelegate() {
+    XCTAssertNotNil(sut.movieTableView.delegate)
+    XCTAssertTrue(sut.movieTableView.delegate is MovieLibraryDataService)
+  }
+  
+  // Since dataSource and delegate are instance of same object, we should test if that assumption is true
+  func testViewDidLoad_SetsTableViewDelegateAndDataSourceToSameObject() {
+    XCTAssertEqual(sut.movieTableView.delegate as! MovieLibraryDataService, sut.movieTableView.dataSource as! MovieLibraryDataService)
+  }
+  
 }

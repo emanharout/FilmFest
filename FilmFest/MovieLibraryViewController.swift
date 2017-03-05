@@ -11,17 +11,22 @@ import ChameleonFramework
 
 class MovieLibraryViewController: UIViewController {
   
-    @IBOutlet weak var movieTableView: UITableView!
+  @IBOutlet weak var movieTableView: UITableView!
+  @IBOutlet weak var dataService: MovieLibraryDataService!
+  
+  
   override var preferredStatusBarStyle: UIStatusBarStyle {
     return .lightContent
   }
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-      
-      view.backgroundColor = GradientColor(.radial, frame: view.frame, colors: [UIColor.flatSkyBlue(), UIColor.flatNavyBlue()])
-    }
-
-
+  
+  override func viewDidLoad() {
+    super.viewDidLoad()
+    
+    view.backgroundColor = GradientColor(.radial, frame: view.frame, colors: [UIColor.flatSkyBlue(), UIColor.flatNavyBlue()])
+    movieTableView.dataSource = dataService
+    movieTableView.delegate = dataService
+  }
+  
+  
 }
 
