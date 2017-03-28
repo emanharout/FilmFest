@@ -29,7 +29,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="315" height="527"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCellID" id="cnv-BZ-EbP">
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="movieCellID" id="cnv-BZ-EbP" customClass="MovieCell" customModule="FilmFest" customModuleProvider="target">
                                                 <rect key="frame" x="0.0" y="28" width="315" height="44"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="cnv-BZ-EbP" id="ffm-0j-5Tk">

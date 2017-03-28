@@ -12,6 +12,7 @@
 		0322DE021E654ADB00C335F3 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DE011E654ADB00C335F3 /* Movie.swift */; };
 		0322DE081E66AA2000C335F3 /* MovieManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DE071E66AA2000C335F3 /* MovieManagerTests.swift */; };
 		0322DE0A1E66ADE100C335F3 /* MovieManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0322DE091E66ADE100C335F3 /* MovieManager.swift */; };
+		03659DC61E8A3D9B006D3C50 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03659DC51E8A3D9B006D3C50 /* MovieCell.swift */; };
 		03D654001E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D653FF1E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift */; };
 		03D654021E6C0C9300EB13F1 /* MovieLibraryDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D654011E6C0C9300EB13F1 /* MovieLibraryDataService.swift */; };
 		03D654041E6C11BF00EB13F1 /* MovieLibraryDataServiceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03D654031E6C11BF00EB13F1 /* MovieLibraryDataServiceTests.swift */; };
@@ -40,6 +41,7 @@
 		0322DE011E654ADB00C335F3 /* Movie.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
 		0322DE071E66AA2000C335F3 /* MovieManagerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManagerTests.swift; sourceTree = "<group>"; };
 		0322DE091E66ADE100C335F3 /* MovieManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieManager.swift; sourceTree = "<group>"; };
+		03659DC51E8A3D9B006D3C50 /* MovieCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
 		03C0E3E91E36EAC01A784919 /* Pods-FilmFestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FilmFestTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FilmFestTests/Pods-FilmFestTests.debug.xcconfig"; sourceTree = "<group>"; };
 		03D653FF1E6C044100EB13F1 /* MovieLibraryViewControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieLibraryViewControllerTests.swift; sourceTree = "<group>"; };
 		03D654011E6C0C9300EB13F1 /* MovieLibraryDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MovieLibraryDataService.swift; sourceTree = "<group>"; };
@@ -116,6 +118,14 @@
 			name = TestControllers;
 			sourceTree = "<group>";
 		};
+		03659DC41E8A3D70006D3C50 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				03659DC51E8A3D9B006D3C50 /* MovieCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
 		36575DC31DB56FB50023D5CB = {
 			isa = PBXGroup;
 			children = (
@@ -140,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				36575DCF1DB56FB50023D5CB /* AppDelegate.swift */,
+				03659DC41E8A3D70006D3C50 /* Views */,
 				0322DE051E664C5300C335F3 /* Controllers */,
 				0322DE031E664BC500C335F3 /* Model */,
 				0322DDFD1E6541BC00C335F3 /* DropShadowView.swift */,
@@ -385,6 +396,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03659DC61E8A3D9B006D3C50 /* MovieCell.swift in Sources */,
 				0322DDFE1E6541BC00C335F3 /* DropShadowView.swift in Sources */,
 				36575DD21DB56FB50023D5CB /* MovieLibraryViewController.swift in Sources */,
 				03D654021E6C0C9300EB13F1 /* MovieLibraryDataService.swift in Sources */,

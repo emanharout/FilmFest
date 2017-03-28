@@ -13,6 +13,7 @@ class MovieLibraryDataServiceTests: XCTestCase {
   
   var sut: MovieLibraryDataService!
   var tableView: UITableView!
+  var movieLibraryVC: MovieLibraryViewController!
   
   override func setUp() {
     super.setUp()
@@ -20,7 +21,11 @@ class MovieLibraryDataServiceTests: XCTestCase {
     sut = MovieLibraryDataService()
     sut.movieManager = MovieManager()
     
-    tableView = UITableView()
+    let storyboard = UIStoryboard(name: "Main", bundle: nil)
+    movieLibraryVC = storyboard.instantiateViewController(withIdentifier: "MovieLibraryVC") as! MovieLibraryViewController
+    _ = movieLibraryVC.view
+    
+    tableView = movieLibraryVC.movieTableView
     tableView.dataSource = sut
     tableView.delegate = sut
     
@@ -60,5 +65,39 @@ class MovieLibraryDataServiceTests: XCTestCase {
     XCTAssertEqual(tableView.numberOfRows(inSection: 1), 2)
   }
   
+  func testCellForRowAtIndex_ShouldReturnMovieCell() {
+    sut.movieManager.addMovieToLibrary(movie: Movie(title: "Horror"))
+    tableView.reloadData()
+    
+    let cell = tableView.cellForRow(at: IndexPath(row: 0, section: 0))
+    XCTAssertTrue(cell is MovieCell)
+    
+  }
   
+  func testCell_ShouldDequeueCell() {
+    let tableViewMock = TableViewMock()
+    tableViewMock.dataSource = sut
+    tableViewMock.register(MovieCell.self, forCellReuseIdentifier: "movieCellID")
+    
+    sut.movieManager.addMovieToLibrary(movie: Movie(title: "Sci-Fi"))
+    tableViewMock.reloadData()
+    
+    _ = tableViewMock.cellForRow(at: IndexPath(row: 0, section: 0))
+    
+    XCTAssertTrue(tableViewMock.cellDequeuedProperly)
+  }
+  
+}
+
+
+extension MovieLibraryDataServiceTests {
+  class TableViewMock: UITableView {
+    var cellDequeuedProperly: Bool = false
+    
+    override func dequeueReusableCell(withIdentifier identifier: String, for indexPath: IndexPath) -> UITableViewCell {
+      cellDequeuedProperly = true
+      
+      return super.dequeueReusableCell(withIdentifier: identifier, for: indexPath)
+    }
+  }
 }
